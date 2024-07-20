@@ -36,15 +36,15 @@
                                 <div class="text-center w-75 m-auto">
                                     <div class="auth-logo">
                                         <a href="#" class="logo logo-dark text-center">
-                                            <span class="logo-lg">
-                                                <img src="{{asset($pengaturan->logo ?? '') }}" alt="" height="200">
-                                            </span>
+                                            <h1 class="logo-lg">
+                                                SI Pendataan Mahasiswa
+                                            </h1>
                                         </a>
 
                                         <a href="#" class="logo logo-light text-center">
-                                            <span class="logo-lg">
-                                                <img src="{{asset($pengaturan->logo ?? '') }}" alt="" height="200">
-                                            </span>
+                                            <h1 class="logo-lg">
+                                                SI Pendataan Mahasiswa
+                                            </h1>
                                         </a>
                                     </div>
                                     <p class="text-muted mb-4 mt-3">Masukan email dan password untuk login. </p>
