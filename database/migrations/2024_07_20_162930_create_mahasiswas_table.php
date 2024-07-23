@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('jenis_kelamin')->nullable();
             $table->bigInteger('jurusan_id')->nullable();
             $table->string('no_hp')->nullable();
+            $table->string('email')->nullable();
             $table->string('foto')->nullable();
             $table->mediumText('alamat')->nullable();
             $table->mediumText('keterangan')->nullable();

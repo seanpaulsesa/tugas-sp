@@ -35,7 +35,7 @@
 </head>
 
 <body class="loading">
-    {{-- @include('sweetalert::alert') --}}
+    @include('sweetalert::alert')
     <!-- Begin page -->
     <div id="wrapper">
 
@@ -142,11 +142,11 @@
                         </a>
                         <div class="dropdown-menu">
                             <!-- item-->
-                            <a href="{{ url('admin/mahasiswa/create') }}" class="dropdown-item">
+                            <a href="{{ url('admin/mahasiswa/tambah') }}" class="dropdown-item">
                                 <span> Tambah Data Mahasiswa</span>
                             </a>
 
-                            <a href="{{ url('admin/jurusan/create') }}" class="dropdown-item">
+                            <a href="{{ url('admin/jurusan/tambah') }}" class="dropdown-item">
                                 <span> Tambah Data Jurusan</span>
                             </a>
 

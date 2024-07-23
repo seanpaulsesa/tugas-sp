@@ -1,6 +1,6 @@
 @extends('admin.layout.tamplate')
 @section('title')
-  Mahasiswa
+  Jurusan
 @endsection
 @section('content')
     <!-- ============================================================== -->
@@ -16,18 +16,18 @@
                 @include('admin.layout.breadcump')
 
                 <div class="row">
-                    <div class="col-12 ">
+                    <div class="col-6 ">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="header-title"> Data Mahasiswa</h4>
+                                <h4 class="header-title"> Data Jurusan</h4>
                                 <div class="row mt-3 d-flex justify-content-between">
-                                    <div class="col-6">
+                                    <div class="col-8">
                                         @include('admin.layout.search')
                                     </div>
 
                                     <div class="">
-                                            <a class="btn btn-dark" href="{{route('admin.mahasiswa.tambah')}}"> Tambah Data <i data-feather="plus"></i></a>
-                                        <a class="btn btn-success" href="{{route('admin.mahasiswa.excel')}}">Cetak Excel <i data-feather="printer"></i></a>
+                                            <a class="btn btn-dark" href="{{route('admin.jurusan.tambah')}}"> Tambah Data <i data-feather="plus"></i></a>
+                                        <!-- <a class="btn btn-success" href="">Cetak Excel <i data-feather="printer"></i></a> -->
                                     </div>
                                 </div>
 
@@ -35,42 +35,26 @@
                                     <table class="table table-bordered">
                                         <tr>
                                             <th width="1%">No</th>
-                                            <th>Foto</th>
-                                            <th>NIM</th>
-                                            <th>Nama Lengkap</th>
                                             <th>Jurusan</th>
-                                            <th>Jenis Kelamin</th>
-                                            <th></th>
+                                            <th>Aksi</th>
                                         </tr>
                                             @forelse ($datas as $data )
                                             <tr>
                                                 <td>{{ ++$i}}</td>
-                                                <td class="p-0" width="100px">
-                                                    <img src="{{ asset($data->foto) }}" alt="Picture" class="img img-fluid p-2 w-80 m-1 rounded">
-                                                </td>
                                                 <td>
-                                                    {{$data->nim}}
-                                                </td>
-                                                <td>
-                                                    <a class="text-dark"
-                                                        href=""> {{$data->nama_lengkap}}</a>
-                                                </td>
-                                                <td>
-                                                     {{$data->jurusan->jurusan}}</td>
-                                                <td>
-                                                    {{$data->jenis_kelamin}}
+                                                    {{$data->jurusan}}
                                                 </td>
                                                 <td>
 
-                                                    <a href="{{route('admin.mahasiswa.detail',$data->id)}}"
+                                                    <a href="{{route('admin.jurusan.detail',$data->id)}}"
                                                         class="btn btn-sm btn-outline-warning border-0  waves-effect waves-light fs-4">
                                                         <i class="fas fa-eye"></i>
                                                     </a>
-                                                    <a href="{{route('admin.mahasiswa.ubah',$data->id)}}"
+                                                    <a href="{{route('admin.jurusan.ubah',$data->id)}}"
                                                         class="btn btn-sm btn-outline-primary border-0 waves-effect waves-light fs-4">
                                                         <i class="fas fa-edit"></i>
                                                     </a>
-                                                    <form class="d-inline" action="{{route('admin.mahasiswa.hapus',$data->id)}}"
+                                                    <form class="d-inline" action="{{route('admin.jurusan.hapus',$data->id)}}"
                                                         method="POST" enctype="multipart/form-data">
                                                         @csrf
                                                         @method('DELETE')
@@ -82,7 +66,6 @@
 
                                                         </button>
                                                     </form>
-
                                                 </td>
 
                                             </tr>
