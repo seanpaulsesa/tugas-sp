@@ -16,15 +16,15 @@ class MahasiswaSeeder extends Seeder
         Mahasiswa::create(
             [
                 'nim' => '16219281',
-                'nama_lengkap' => 'Paulus Sesa',
-                'tempat_lahir' => 'Sorong',
+                'nama_lengkap' => 'Apatis',
+                'tempat_lahir' => 'jayapura',
                 'tanggal_lahir' => now(),
                 'jenis_kelamin' => 'Pria',
                 'jurusan_id' => 1,
                 'no_hp' => '082198159714',
-                'foto' => '/gambar/mahasiswa/1.jpg',
+                'foto' => '/gambar/mahasiswa/apatis1.jpeg',
                 'alamat' => 'Jln. P3 Waena',
-                'keterangan' => 'Mahasiswa Angakatan 2018',
+                'keterangan' => 'Mahasiswa Angakatan 2020',
             ]
         );
 
@@ -32,15 +32,15 @@ class MahasiswaSeeder extends Seeder
         Mahasiswa::create(
             [
                 'nim' => '16219211',
-                'nama_lengkap' => 'Paul Sesa',
-                'tempat_lahir' => 'Sorong',
+                'nama_lengkap' => 'Apatis',
+                'tempat_lahir' => 'Jayapura',
                 'tanggal_lahir' => now(),
                 'jenis_kelamin' => 'Pria',
                 'jurusan_id' => 3,
                 'no_hp' => '082198159714',
-                'foto' => '/gambar/mahasiswa/2.jpeg',
+                'foto' => '/gambar/mahasiswa/apatis2.jpeg',
                 'alamat' => 'Jln. P3 Waena',
-                'keterangan' => 'Mahasiswa Angakatan 2018',
+                'keterangan' => 'Mahasiswa Angakatan 2020',
             ]
         );
 
@@ -50,14 +50,14 @@ class MahasiswaSeeder extends Seeder
             [
                 'nim' => '16219281',
                 'nama_lengkap' => 'Pace Koding',
-                'tempat_lahir' => 'Sorong',
+                'tempat_lahir' => 'Jayapura',
                 'tanggal_lahir' => now(),
                 'jenis_kelamin' => 'Pria',
                 'jurusan_id' => 2,
                 'no_hp' => '082198159714',
-                'foto' => '/gambar/mahasiswa/3.png',
+                'foto' => '/gambar/mahasiswa/apatis1.jpeg',
                 'alamat' => 'Jln. P3 Waena',
-                'keterangan' => 'Mahasiswa Angakatan 2018',
+                'keterangan' => 'Mahasiswa Angakatan 2020',
             ]
         );
 
