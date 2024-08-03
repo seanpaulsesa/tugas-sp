@@ -100,7 +100,7 @@
                         <span class="logo-lg">
 
                             <label
-                            class="h5 text-white fw-bolder">SI Pendataan Mahasiswa</label>
+                            class="h2 text-white fw-bolder">PENDATAAN MAHASISWA ASRAMA PUTRA LANNY JAYA</label>
                         </span>
                     </a>
 
@@ -110,7 +110,9 @@
                         </span>
                         <span class="logo-lg">
                             <label
-                            class="h5 text-white fw-bolder">SI Pendataan Mahasiswa</label>
+                           
+                            class="h5text-white fw-bolder">PENDATAAN MAHASISWA ASLAN</label>
+                            <b></b>
                         </span>
                     </a>
                 </div>
